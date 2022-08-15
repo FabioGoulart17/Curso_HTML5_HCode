@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+
+
+</head>
+<body>
+
+<!--No arquivo script.js que foi criado separadamente, existe o comando de 
+console.log que solicita a escrita da tag h1 no console do navegador.
+Porem, quando é executado sem o atributo ***defer dentro da tag ***script
+o navegador não consegue encontrar,isso porque o script esta sendo 
+executado antes da tag ***h1, mas quando é colocado o atributo ***defer
+o navegador imprime o valor no console do navegador.
+
+CONCLUSÃO: quando precisar-mos executar um script antes de algum elemento 
+html, devemos usar o atributo ***defer para que o navegador o carregue sem erros-->
+<script src="script.js" defer></script>
+    <h1>Hello World!</h1>
+
+    
+</body>
+</html>
